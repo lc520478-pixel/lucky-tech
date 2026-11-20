@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lucky Tech | Premium WhatsApp Group</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 22px;
+      background: radial-gradient(circle at top, #132a27, #0b1416);
+      color: #ffffff;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    .card {
+      width: min(100%, 420px);
+      padding: 28px;
+      background: #142128;
+      border: 1px solid #2a4741;
+      border-radius: 26px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+      text-align: center;
+    }
+    .logo {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      background: #20b878;
+      color: #062217;
+      font-weight: 800;
+      font-size: 22px;
+    }
+    .tag {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 7px 14px;
+      border-radius: 30px;
+      background: #183c32;
+      color: #91e7bd;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    h1 { font-size: 26px; margin: 14px 0 8px; }
+    .muted { color: #b8c7c8; line-height: 1.6; font-size: 14px; margin: 0; }
+    .offer {
+      margin: 20px 0;
+      padding: 16px;
+      border-radius: 18px;
+      background: #1a302d;
+      border: 1px solid #315c4b;
+    }
+    .old { text-decoration: line-through; color: #aab8b9; font-size: 20px; margin-right: 10px; }
+    .new { font-size: 40px; font-weight: 800; color: #47ceaa; }
+    .discount {
+      display: inline-block;
+      margin-top: 8px;
+      background: #245b42;
+      color: #b4f4ce;
+      padding: 5px 12px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    ul { padding: 0; list-style: none; text-align: left; margin: 18px 0; }
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid #293b40;
+      font-size: 14px;
+      color: #e2e8f0;
+    }
+    li::before { content: "✓ "; color: #52dda0; font-weight: bold; margin-right: 6px; }
+    .upi-box {
+      margin: 18px 0;
+      padding: 18px;
+      background: #1a302d;
+      border: 1px solid #315c4b;
+      border-radius: 16px;
+    }
+    .upi-box img {
+      width: 200px;
+      height: 200px;
+      border-radius: 12px;
+      background: #ffffff;
+      padding: 6px;
+      object-fit: contain;
+    }
+    .copy-btn {
+      padding: 10px 18px;
+      background: #20b878;
+      color: #062217;
+      border: 0;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .copy-btn:hover { background: #25d386; }
+    .wa-btn {
+      display: block;
+      width: 100%;
+      margin-top: 12px;
+      padding: 14px;
+      border: 1px solid #25d366;
+      border-radius: 14px;
+      background: #122e26;
+      color: #25d366;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .wa-btn:hover { background: #183c32; }
+    .small { font-size: 12px; color: #9aafb2; line-height: 1.55; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="logo">LT</div>
+    <span class="tag">LUCKY TECH • PREMIUM</span>
+    <h1>Lucky Tech WhatsApp Group</h1>
+    <p class="muted">Owner: Lucky Chauhan<br>प्रीमियम ग्रुप से जुड़ने के लिए एक बार भुगतान करें।</p>
+
+    <section class="offer">
+      <div><span class="old">₹500</span><span class="new">₹99</span></div>
+      <span class="discount">80.2% OFF</span>
+    </section>
+
+    <ul>
+      <li>Lucky Tech प्रीमियम WhatsApp ग्रुप</li>
+      <li>सुरक्षित डायरेक्ट UPI पेमेंट (0% एक्स्ट्रा चार्ज)</li>
+      <li>पेमेंट वेरीफाई होते ही ग्रुप का लिंक मिलेगा</li>
+    </ul>
+
+    <div class="upi-box">
+      <p style="margin: 0 0 12px; font-weight: 700; color: #47ceaa;">Step 1. QR Scan करके ₹99 Pay करें</p>
+      <img src="qr.jpg" alt="UPI QR Code">
+      <p style="margin: 12px 0 10px; font-size: 14px; color: #e2e8f0;">
+        UPI ID: <strong id="upiId" style="color: #47ceaa;">lucky85@icici</strong>
+      </p>
+      <button type="button" class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('upiId').innerText); alert('UPI ID Copy ho gayi!');">
+        Copy UPI ID
+      </button>
+    </div>
+
+    <a class="wa-btn" href="https://wa.me/919756021585?text=Hello%20Lucky%2C%20maine%20%E2%82%B999%20pay%20kar%20diya%20hai.%20Ye%20raha%20screenshot%3A" target="_blank" rel="noopener">
+      Step 2. WhatsApp पर Screenshot भेजें
+    </a>
+
+    <p class="small">पेमेंट करने के बाद ऊपर दिए गए Step 2 बटन पर क्लिक करके WhatsApp पर स्क्रीनशॉट भेजें। पेमेंट वेरीफाई होते ही आपको ग्रुप का लिंक भेज दिया जाएगा।</p>
+  </main>
+</body>
+</html>
